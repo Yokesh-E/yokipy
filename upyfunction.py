@@ -98,4 +98,53 @@ def lo(a,b,c):
     print(l)
     print(l1)
 lo(10,1,-1)
+
+#default argument
+def one(name="hi"):
+    print(name)
+one(" yoki") #ouput yoki
+
+#default argument
+def one(name="hi"):
+    name="ki"
+    print(name)
+one(" yoki")#output ki
+
+def li(a,b,c=12):
+    d=a+b*c
+    return d
+print(li(12,10,9)) #first multiply after plus 102
+
+
+def li(item="pipe",quantity,price=50):
+    total=quantity*price
+    return total
+print(li(5)) #error
+
+def li(quantity,item="pipe",price=50):
+    total=quantity*price
+    return total
+print(li(5))#you first assign normal value in parameter after that assign default argument. its comes output 
+
+def order(food, drink="tea"):
+    if food == "dosa" and drink == 'tea':
+        print("my order is:", food)
+    elif food == "vadai" or drink == 'coffee':
+        print (f"my wrong order is: {food} and {drink}")
+    else:
+        print("order cancel")
+
+order(input("enter your order please:"))
+
+# arbitrary aruments
+def kl(*a):
+    print(sum(a))
+kl(5,5,2)#you can give multiple values 
 """
+def names(*val):
+    print(val) 
+    for i in val:
+        print(i)
+print(names("hi","hello","get"))
+    
+

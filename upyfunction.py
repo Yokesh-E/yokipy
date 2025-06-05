@@ -140,11 +140,73 @@ order(input("enter your order please:"))
 def kl(*a):
     print(sum(a))
 kl(5,5,2)#you can give multiple values 
-"""
+
 def names(*val):
     print(val) 
     for i in val:
         print(i)
 print(names("hi","hello","get"))
-    
 
+def arith(a,b,c):
+    if c=="+":
+        print(a+b)
+    elif c=="-":
+        print(a-b)
+    elif c=="%":
+        print(a%b)
+    elif c=="/":
+        print(a/b)
+arith(10,10,"/")  
+
+#keywords arguments **
+
+def kali(**val):
+    for i in val.items():
+        print(i)
+kali(a=1,b=28,c="mass",d="mersal")
+
+
+def mul(**val):
+    c=1
+    for i,j in val.items():
+        print(i)
+        c*=j
+    print(c)    
+mul(a=10,b=5)
+
+#position only argument(/)
+
+def hello(a,b,/):
+    return a+b
+print(hello(10,b=10)) #error after / its not consider any argus bur before its take only position only you give
+
+#keyword only arguments(*)
+
+def hello(a,b,*):
+    return a+b
+print(hello(10,b=10))
+# keyword only argus is only consider after * symbl , before its skip any thing
+
+def ade(a,b,/,l,*,c):
+    print(a+b*c,l)
+ade(1,2,l=9,c=3)
+
+
+
+# recursive function
+
+#to function work at repeatly
+#then function call itself to run the  program repeatly end of the statement
+
+def hi():
+    print("hell")
+    
+hi()
+"""
+
+def fact(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n* fact(n-1)
+print(fact(5))

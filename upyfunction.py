@@ -202,11 +202,45 @@ def hi():
     print("hell")
     
 hi()
-"""
+
 
 def fact(n):
     if n==0 or n==1:
-        return 1
+        return ( "hi")
     else:
-        return n* fact(n-1)
+        return (n* fact(n-1))
 print(fact(5))
+
+def fab(n):
+    if n==0:
+        return 0
+    elif n==1:
+        return 1
+    return fab(n-1)+fab(n-2)
+print(fab(10))
+
+def sun(n):
+    if n==0:
+        return 0
+    return n+ sun(n-1)
+print(sun(5))
+
+#reverse
+def rep(n):
+    l=[]
+    if n==0:
+        return 0
+    print(n,end="")
+    return rep(n-1)
+print(rep(5))
+"""
+
+l=[]
+def rev(n):
+    
+    if n<0:
+        return l
+    l.append(n)
+    return rev(n-1)
+print(rev(5))
+  

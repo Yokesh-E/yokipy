@@ -3,3 +3,7 @@ b={}
 b=dict.copy(a)
 print(a[1])
 print(b)
+
+
+
+

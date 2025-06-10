@@ -29,6 +29,7 @@ c()
 a=lambda a,b: 
 print(a(5,6))
 
-a=lambda age:"adult" if a >=18 else "miner"
+a=lambda age:"adult" if a>=18 else "miner"
 print(a(27))
 """
+

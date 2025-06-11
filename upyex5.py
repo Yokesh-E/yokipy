@@ -5,25 +5,8 @@ b=dict.copy(a)
 print(a[1])
 print(b)
 
-a=10
-
-def hii():
-    
-    b=15
-    a=12
-    print(a)
-    c=1    
-    def he():
-        
-        c=100
-        print(a)    
-    he()
-    print(c)
-hii()
-print(a)
-"""
 a=5
-n=2
+n=0
 for i in range(a): 
     for j in range(i):
         print(n,end=" ")
@@ -31,3 +14,28 @@ for i in range(a):
     print()
 
 
+def e(a,c):
+    print(a+c)
+    def h(b,d):
+        print(b*d)
+        def j(k,l):
+            return k-l
+        return j
+    return h #dont use ()
+closure=e(5,3)
+el=closure(2,3)(2,3)
+print(el)
+print(e(5,3)(2,3)(2,3))
+
+a=10
+def l():
+    a=12
+    def d():
+        nonlocal a
+        a=13
+        print(a)
+    d()
+    print(a)
+l()
+print(a)
+"""

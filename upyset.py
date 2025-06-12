@@ -44,6 +44,12 @@ s={1,2,3,4,5}
 s2=s.pop()
 print(s2)
 
+#clear
+s1.clear
+
+#del()
+del s1
+
 """
 """
 #in build methos

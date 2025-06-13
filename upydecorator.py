@@ -138,3 +138,17 @@ def tr():
     print( "python")
 tr()
 """
+def addr(gui):
+    def add1(a,b):
+        return gui(a,b)
+    return add1
+##def eve(gui):
+##    def eve1():
+##        val=gui()
+##        print(val-3)
+##    return eve1
+
+@addr
+def ing(x,y):
+    return x+y
+print(ing(5,5))

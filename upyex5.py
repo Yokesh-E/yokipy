@@ -55,7 +55,7 @@ print(closure)
 a=eval("4")
 b=eval("8")
 print(a+b)
-"""
+
 a="aaabaa"
 b=list(a)
 print(b[0])
@@ -69,4 +69,39 @@ for i in range(len(b)):
         else:
             break
     print(a[i],n,end="")
+
+def demo():
+    n=1
+    while n<=4:
+        l=n*n
+        
+        n+=1
+        return l
+a=demo()
+print(demo())
+
+a=eval("4")
+b=eval("8")
+print(a+b)
+
+a="aaabaa"
+b=list(a)
+print(b[0])
+
+for i in b:
+    n=0
+    for j in a:
+        if i==j:
+            n+=1
+            b.remove(i)
+        else:
+            break
+    print(i,n,end="")
+"""
+def kali(**val):
+    for i in val:
+        print(i)
+kali(a=1,b=28,c="mass",d="mersal")
+
+
 

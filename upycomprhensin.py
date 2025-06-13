@@ -43,3 +43,9 @@ print(b)
 ##        
 ##        print(l)
 
+for i in a:
+    
+    if i is list:
+            for k in i:
+                print(k)
+    print(i)

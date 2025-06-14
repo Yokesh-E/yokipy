@@ -97,11 +97,25 @@ for i in b:
         else:
             break
     print(i,n,end="")
+
 """
-def kali(**val):
-    for i in val:
+a="abbbbbbaaassskkkk"
+b=list(a)
+c=list(a)
+y=[]
+for i in b:
+    n=0
+    print(c)
+    for j in c:    
+        if i==j:
+            n+=1   
+        else:
+            break
+    for q in range(n):
+        y.append(i)
+        p=c.pop(q)
         print(i)
-kali(a=1,b=28,c="mass",d="mersal")
-
-
+        x=b.pop(q)
+        
+    print(i+""+str(n),end=" ")
 
